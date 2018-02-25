@@ -14,6 +14,8 @@
     padding: 0;
     width: 960px;
     margin: 0 auto;
+    background-color: #ffffff;
+    border-bottom-color: #cccccc;
 }
 
 .name {
@@ -30,6 +32,12 @@
     padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.nav:hover {
+    background-color: #999999;
+    color: white;
+    font-weight: bold;
 }
 
 .nav > a {
@@ -52,11 +60,18 @@
     background-color: white;
     margin: 20px 20px 20px 0;
     padding: 10px 30px 30px 30px;
+    font-size: 20px;
+    line-height: 150%;
+    color: #777777;
 }
 
 .about > img {
     float: left;
     margin: 0px 20px 20px 0px;
+}
+
+.about > h1 {
+    color: #4aaaa5;
 }
 
 .about-break {
@@ -69,12 +84,16 @@
 }
 
 .social {
-    width: 320px;
+    width: 270;
     text-align: center;
     height: 150px;
     margin-top: 20px;
     background-color: white;
     padding: 20px 20px 0px 20px;
+}
+
+.social > h3 {
+    color: #4aaaa5;
 }
 
 .social-icons {
@@ -98,13 +117,39 @@
     height: 1px;
     border: 0;
     border-top: 5px solid #4aaaa5;
-    margin: 1em 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
 footer {
     text-align: center;
-    background-color: #444444;
+    background-color: #666666;
     height: 60px;
     margin-top: 0px;
+    padding-top: 30px;
+    color: white;
+
+}
+
+.portfolio-images {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-images > li {
+    padding: 10px 20px 10px 0px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+.contact-message {
+    width: 100%;
+    flex-grow: 1;
+    height: 200px;
 }
