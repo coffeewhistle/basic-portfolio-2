@@ -65,6 +65,12 @@
     color: #777777;
 }
 
+a {
+    color: #777777;
+    text-decoration-color: #777777;
+    font-weight: bold;
+}
+
 .about > img {
     float: left;
     margin: 0px 20px 20px 0px;
@@ -136,10 +142,25 @@ footer {
     list-style: none;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .portfolio-images > li {
     padding: 10px 20px 10px 0px;
+}
+
+.absolute {
+    position: relative;
+}
+
+.portfolio-image-title {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    bottom: 50px;
+    text-align: center;
+    background: #4aaaa5;
+    color: white;
 }
 
 .contact-form {
